@@ -55,7 +55,7 @@
     <Compile Include="Models\CustomerDemographic.cs" />
     <Compile Include="Models\Document.cs" />
     <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\NorthwindContext.cs" />
+    <Compile Include="NorthwindContext.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Product.cs" />

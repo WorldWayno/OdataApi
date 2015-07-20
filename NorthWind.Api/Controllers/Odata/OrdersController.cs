@@ -4,7 +4,7 @@ using System.Web.OData;
 using Northwind.Data;
 using Northwind.Data.Models;
 
-namespace NorthWind.Api.Controllers
+namespace NorthWind.Api.Controllers.Odata
 {
     public class OrdersController : ODataController
     {

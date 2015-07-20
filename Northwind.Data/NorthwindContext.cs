@@ -7,11 +7,18 @@ namespace Northwind.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class NorthwindContext : DbContext
+    public class NorthwindContext : DbContext
     {
+        static NorthwindContext()
+        {
+            System.Data.Entity.Database.SetInitializer<NorthwindContext>(null);
+            
+        }
         public NorthwindContext()
             : base("name=NorthwindConnection")
         {
+            Configuration.ProxyCreationEnabled = false;
+            //Configuration.LazyLoadingEnabled = false;
         }
 
         public virtual DbSet<Category> Categories { get; set; }
