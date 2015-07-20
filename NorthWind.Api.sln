@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D2A308
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Data", "Northwind.Data\Northwind.Data.csproj", "{DD2ACC2A-E0B1-4CF7-9220-6933C4A64225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{A2F648D0-7444-4303-9D19-D03DE5788009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2F648D0-7444-4303-9D19-D03DE5788009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2F648D0-7444-4303-9D19-D03DE5788009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD2ACC2A-E0B1-4CF7-9220-6933C4A64225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2ACC2A-E0B1-4CF7-9220-6933C4A64225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2ACC2A-E0B1-4CF7-9220-6933C4A64225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2ACC2A-E0B1-4CF7-9220-6933C4A64225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
