@@ -28,7 +28,6 @@ namespace NorthWind.Api
             builder.EntitySet<Order>("Orders");
 
 
-
             config.MapODataServiceRoute(
                 routeName: "ODataRoute",
                 routePrefix: "odata",
@@ -45,8 +44,7 @@ namespace NorthWind.Api
 
             var order = builder.EntityType<Order>();
             order.HasKey(c => c.OrderID);
-            //order.ComplexProperty(c => c.Employee);
-            //order.HasMany(c => c.OrderDetails);
+            order.HasMany(c => c.OrderDetails);
 
             return builder.GetEdmModel();
         }

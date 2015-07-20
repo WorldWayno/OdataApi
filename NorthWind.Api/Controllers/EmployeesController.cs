@@ -147,14 +147,14 @@ namespace NorthWind.Api.Controllers
         [EnableQuery]
         public SingleResult<Employee> GetEmployee1([FromODataUri] int key)
         {
-            return SingleResult.Create(db.Employees.Where(m => m.EmployeeID == key).Select(m => m.Employee1));
+            return SingleResult.Create(db.Employees.Where(m => m.EmployeeID == key).Select(m => m.Manager));
         }
 
         // GET: odata/Employees(5)/Employees1
         [EnableQuery]
         public IQueryable<Employee> GetEmployees1([FromODataUri] int key)
         {
-            return db.Employees.Where(m => m.EmployeeID == key).SelectMany(m => m.Employees1);
+            return db.Employees.Where(m => m.EmployeeID == key).SelectMany(m => m.Employees);
         }
 
         // GET: odata/Employees(5)/Orders

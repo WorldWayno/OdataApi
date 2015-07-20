@@ -9,7 +9,7 @@ namespace Northwind.Data.Models
     {
         public Employee()
         {
-            Employees1 = new HashSet<Employee>();
+            Employees = new HashSet<Employee>();
             Orders = new HashSet<Order>();
             Territories = new HashSet<Territory>();
         }
@@ -66,21 +66,9 @@ namespace Northwind.Data.Models
         //[StringLength(255)]
         //public string PhotoPath { get; set; }
 
-        public DateTime? CreatedDate { get; set; }
+        public virtual ICollection<Employee> Employees { get; set; }
 
-        public int? CreatedBy { get; set; }
-
-        public DateTime? ModifiedDate { get; set; }
-
-        public int? ModifiedBy { get; set; }
-
-        public DateTime? DeletedDate { get; set; }
-
-        public int? DeletedBy { get; set; }
-
-        public virtual ICollection<Employee> Employees1 { get; set; }
-
-        public virtual Employee Employee1 { get; set; }
+        public virtual Employee Manager { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
 
